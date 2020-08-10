@@ -7,20 +7,4 @@ layout: default
 {{ content }}
 </div>
 
-<div id="container"></div>
-<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
-<script src="https://jjeejj.github.io/js/gitment.js"></script>
-<script>
-var gitment = new Gitment({
-  id: '{{ page.date }}', 
-  owner: 'ke-nan', #Github Pages博客所在的github账户名
-  repo: 'ke-nan.github.io', #Github Pages博客所在仓库名
-  oauth: {
-    client_id: 'c6077af0b625b8e926b7', #第1步所申请到的Client ID
-    client_secret: '42964e1809c57aa84ece0e79ae2766567105198d',#第1步所申请到的Client Secret
-  },
-})
-gitment.render('container')
-</script>
-
 {% include page/about.html %}
