@@ -5,4 +5,19 @@ layout: default
 
 {{ content }}
 
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: 'ke-nan',
+    repo: 'ke-nan.github.io',
+    oauth: {
+        client_id: 'c6077af0b625b8e926b7',
+        client_secret: '42964e1809c57aa84ece0e79ae2766567105198d',
+    },
+});
+gitment.render('gitmentContainer');
+</script>
+
 {% include page/about.html %}
