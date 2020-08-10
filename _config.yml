@@ -6,11 +6,11 @@ description: >
 baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "https://nan.cool" # the base hostname & protocol for your site
 
-author:
-  fullname: kenan
-  github: ke-nan
-  linkedin: linkedin
-  email: exam@email.com
+#author:
+  #fullname: kenan
+  #github: ke-nan
+  #linkedin: linkedin
+  #email: exam@email.com
 
 
 # Syntax highlighting
