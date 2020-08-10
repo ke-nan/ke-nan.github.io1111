@@ -1,8 +1,8 @@
 ---
 layout: page
-title:  "Welcome to Pudhina"
-subtitle: "A minimal Jekyll theme"
-date:   2016-05-20 21:21:21 +0530
+title:  "一键安装最新内核并开启 BBR 脚本"
+subtitle: ""
+date:   2020-08-10 21:21:21 +0530
 categories: ["general"]
 ---
 最近，Google 开源了其 TCP BBR 拥塞控制算法，并提交到了 Linux 内核，从 4.9 开始，Linux 内核已经用上了该算法。根据以往的传统，Google 总是先在自家的生产环境上线运用后，才会将代码开源，此次也不例外。
@@ -11,18 +11,26 @@ categories: ["general"]
 本脚本适用环境
 
 系统支持：CentOS 6+，Debian 7+，Ubuntu 12+
+
 虚拟技术：OpenVZ 以外的，比如 KVM、Xen、VMware 等
+
 内存要求：≥128M
+
 日期　　：2018 年 12 月 14 日
 
 关于本脚本
 
 1、本脚本已在 Vultr 上的 VPS 全部测试通过。
+
 2、当脚本检测到 VPS 的虚拟方式为 OpenVZ 时，会提示错误，并自动退出安装。
+
 3、脚本运行完重启发现开不了机的，打开 VPS 后台控制面板的 VNC, 开机卡在 grub 引导, 手动选择内核即可。
+
 4、由于是使用最新版系统内核，最好请勿在生产环境安装，以免产生不可预测之后果。
 
+
 使用方法
+
 
 使用root用户登录，运行以下命令：
 
@@ -31,6 +39,7 @@ wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
 ```
 
 安装完成后，脚本会提示需要重启 VPS，输入 y 并回车后重启。
+
 重启完成后，进入 VPS，验证一下是否成功安装最新内核并开启 TCP BBR，输入以下命令：
 
 ```
@@ -44,8 +53,11 @@ sysctl net.ipv4.tcp_available_congestion_control
 ```
 
 返回值一般为：
+
 net.ipv4.tcp_available_congestion_control = bbr cubic reno
+
 或者为：
+
 net.ipv4.tcp_available_congestion_control = reno cubic bbr
 
 ```
@@ -68,7 +80,9 @@ lsmod | grep bbr
 
 返回值有 tcp_bbr 模块即说明 bbr 已启动。注意：并不是所有的 VPS 都会有此返回值，若没有也属正常。
 
+
 CentOS 下最新版内核 headers 安装方法
+
 
 本来打算在脚本里直接安装 kernel-ml-headers，但会出现和原版内核 headers 冲突的问题。因此在这里添加一个脚本执行完后，手动安装最新版内核 headers 之教程。
 执行以下命令
@@ -80,6 +94,7 @@ yum --enablerepo=elrepo-kernel -y install kernel-ml-headers
 根据 CentOS 版本的不同，此时一般会出现类似于以下的错误提示：
 
 Error: kernel-ml-headers conflicts with kernel-headers-2.6.32-696.20.1.el6.x86_64
+
 Error: kernel-ml-headers conflicts with kernel-headers-3.10.0-693.17.1.el7.x86_64
 
 因此需要先卸载原版内核 headers ，然后再安装最新版内核 headers。执行命令：
