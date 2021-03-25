@@ -2,7 +2,7 @@
 layout: page
 title:  "思科路由器IPSec vpn配置"
 subtitle: ""
-date:   2021-03-26 21:21:21 +0530
+date:   2021-03-26 21:21:22 +0530
 categories: ["general"]
 ---
 ###### 拓扑图：
@@ -10,6 +10,8 @@ categories: ["general"]
 ![](/assets/img/IPSec%20vpn.png)
 
 ###### 配置命令：
+
+以R1为例，R3同理。
 
 ```
 crypto isakmp policy 10
