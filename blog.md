@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 
-subtitle: 
+subtitle: 一名IT民工的苦修之旅
 ---
 
 <div>
