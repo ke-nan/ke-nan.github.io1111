@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 我爱的比脸色还单纯
+subtitle: 我爱的比脸色还单纯
 subtitle: 比宠物还天真
 sitemap:
   priority: 0.9
