@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Haike Nan's blog
-subtitle: 一名网络工程师的苦修之旅
+title: 我爱的比脸色还单纯
+subtitle: 比宠物还天真
 sitemap:
   priority: 0.9
 ---
