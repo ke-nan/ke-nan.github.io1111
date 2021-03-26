@@ -7,7 +7,7 @@ categories: ["general"]
 ---
 ###### 拓扑图：
 
-![](/assets/img/IPSec%20vpn.png)
+![](/assets/img/IPSecvpn.png)
 
 ###### 配置命令：
 
