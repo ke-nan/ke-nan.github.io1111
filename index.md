@@ -1,14 +1,14 @@
 ---
 layout: page
-subtitle: 我爱的比脸色还单纯
-subtitle: 比宠物还天真
+title: 
+subtitle:  
 sitemap:
   priority: 0.9
 ---
 
 
 <div id="describe-text">
-<!--	<p>Non sunt multiplicanda entia sine necessitate</p>
-	<p>Fork and use the theme from the <strong> <a href="https://github.com/knhash/Pudhina"> repository</a> </strong></p>-->
+	<p>我爱的比脸色还单纯</p>
+	<p>比宠物还天真</p>
 </div>
 
