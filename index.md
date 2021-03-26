@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Blog
-subtitle: Select ramblings of Pudhina
+title: 
+subtitle: 一名IT民工的苦修之旅
 ---
 
 <div>
