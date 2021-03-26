@@ -197,18 +197,4 @@ mount -o remount rw /
 2017 年 01 月 09 日：
 1、更新：内核到 4.9.1。
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<script>
-  var gitalk = new Gitalk({
-  clientID: 'c6077af0b625b8e926b7',
-  clientSecret: 'd35e2e952e0566afe39d0d12533d1033420303c6',
-  repo: 'ke-nan.github.io',
-  owner: 'ke-nan',
-  admin: ['ke-nan'],
-  id: location.pathname,      // Ensure uniqueness and length less than 50
-  distractionFreeMode: false  // Facebook-like distraction free mode
-})
 
-gitalk.render('gitalk-container')
-</script>
